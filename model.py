@@ -75,7 +75,7 @@ def get_similar_notes(note: str):
             similarity = cosine_similarity(input_embeddings, note_embeddings)[0][0]
 
             # Порог
-            if similarity > 0.99:
+            if similarity > 0.9:
                 similar_notes.append((note_title, note_tags, note_text, similarity))
 
     if similar_notes:
