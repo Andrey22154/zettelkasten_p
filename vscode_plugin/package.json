@@ -1,0 +1,24 @@
+{
+  "name": "vscode_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Extension.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "python-shell": "^5.0.0",
+    "sklearn": "^0.3.0",
+    "transformers": "^1.8.3",
+    "vscode": "^1.1.37"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9"
+  }
+}
+
