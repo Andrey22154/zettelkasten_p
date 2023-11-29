@@ -1,27 +1,71 @@
-# simNotes - VS Code Extension
+# simNotes README
 
-## Overview
-`simNotes` is a Visual Studio Code extension designed to enhance your note-taking experience. It analyzes the text of your notes and suggests a list of most similar notes, aiding in organizing and retrieving relevant information quickly.
+This is the README for your extension "simNotes". After writing up a brief description, we recommend including the following sections.
 
 ## Features
-- Analyze the text of a note within Visual Studio Code.
-- Retrieve a list of similar notes based on content analysis.
-- Easy to use with a simple command within VS Code.
 
-## How to Use
-1. Write or select the note text in your VS Code editor.
-2. Execute the command `Find Similar Notes`.
-3. View the list of similar notes suggested by the extension.
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-## Installation
-1. Clone this repository or download the source code.
-2. Open the folder in Visual Studio Code.
-3. Run the extension by pressing `F5` or via the `Run` panel.
-4. Test the extension functionality in the new VS Code window that opens.
+For example if there is an image subfolder under your extension project workspace:
 
-## Contributing
-Contributions to `simNotes` are welcome. Feel free to fork the repository, make changes, and submit pull requests.
+\!\[feature X\]\(images/feature-x.png\)
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
+## Requirements
+
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+
+## Extension Settings
+
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+
+For example:
+
+This extension contributes the following settings:
+
+* `myExtension.enable`: Enable/disable this extension.
+* `myExtension.thing`: Set to `blah` to do something.
+
+## Known Issues
+
+Calling out known issues can help limit users opening duplicate issues against your extension.
+
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 1.0.0
+
+Initial release of ...
+
+### 1.0.1
+
+Fixed issue #.
+
+### 1.1.0
+
+Added features X, Y, and Z.
+
+---
+
+## Following extension guidelines
+
+Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+
+* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+
+## Working with Markdown
+
+You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
+* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
+* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+
+## For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
