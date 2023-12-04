@@ -5,12 +5,11 @@ from pydantic import BaseModel
 import pandas as pd
 from typing import List
 
-# Конфигурация модели
-MODEL_PATH = "C:\\Users\\andre\\Desktop\\model_directory"  # Укажите путь к папке с вашей обученной моделью
+
+MODEL_PATH = "path"  # Укажите путь к папке с вашей обученной моделью
 MAX_LEN = 320  # Укажите максимальную длину, которую вы использовали при обучении
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Загрузка модели и токенизатора
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained(MODEL_PATH)
 model.to(DEVICE)
@@ -41,8 +40,7 @@ def find_similar_notes(note_request: NoteRequest):
         outputs = model(**input_note_preprocessed)
         input_embedding = outputs.last_hidden_state[:, 0, :]
 
-    # Здесь нужно определить, как вы храните заметки (например, в списке)
-    data = pd.read_csv('C:\\Users\\andre\\Downloads\\notes_project (3).csv')  # Замените это на ваш датасет заметок
+    data = pd.read_csv('path')  
     dataset = data.title.values + data.tags.values + data['main text'].values
     similarities = []
 
